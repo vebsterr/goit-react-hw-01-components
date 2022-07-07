@@ -30,6 +30,6 @@ export const StyledMetaTitle = styled.span`
   margin-bottom: 5px;
 `;
 
-export const StyledMetaInfo = styled.span`
+export const StyledProfileStatistics = styled.span`
   font-weight: 400;
 `;

@@ -1,23 +1,21 @@
-import userData from 'components/data/user.json';
-
-import { ProfileHead } from 'components/ProfileHead/ProfileHead';
-import { MetaInfo } from 'components/MetaInfo/MetaInfo';
+import { ProfileHead } from 'components/Profile/ProfileHead/ProfileHead';
+import { ProfileStatistics } from 'components/Profile/ProfileStatistics/ProfileStatistics';
 
 import { StyledProfile } from './Profile.styled';
 
-export const Profile = () => {
+export const Profile = ({ location, avatar, username, tag, stats }) => {
   return (
     <StyledProfile>
       <ProfileHead
-        location={userData.location}
-        avatar={userData.avatar}
-        username={userData.username}
-        tag={userData.tag}
+        location={location}
+        avatar={avatar}
+        username={username}
+        tag={tag}
       />
-      <MetaInfo
-        followers={userData.stats.followers}
-        views={userData.stats.views}
-        likes={userData.stats.likes}
+      <ProfileStatistics
+        followers={stats.followers}
+        views={stats.views}
+        likes={stats.likes}
       />
     </StyledProfile>
   );

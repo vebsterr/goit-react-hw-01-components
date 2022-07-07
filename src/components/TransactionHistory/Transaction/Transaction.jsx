@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-
+import { StyledTd } from './Transaction.styled';
 export const Transaction = ({ type, amount, currency }) => {
   return (
     <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <StyledTd>{type}</StyledTd>
+      <StyledTd>{amount}</StyledTd>
+      <StyledTd>{currency}</StyledTd>
     </tr>
   );
 };

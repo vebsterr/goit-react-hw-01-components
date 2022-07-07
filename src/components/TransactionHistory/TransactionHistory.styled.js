@@ -23,8 +23,7 @@ export const StyledTable = styled.table`
     width: 15%;
   }
 
-  th,
-  td {
+  th {
     padding: 20px;
   }
 
@@ -32,28 +31,17 @@ export const StyledTable = styled.table`
     letter-spacing: 2px;
   }
 
-  td {
-    letter-spacing: 1px;
-  }
-
   tbody td {
     text-align: center;
   }
 
-  tfoot th {
-    text-align: right;
-  }
-
-  thead,
-  tfoot {
+  thead {
     background-color: #00345f;
     color: white;
     text-shadow: 1px 1px 1px black;
   }
 
-  thead th,
-  tfoot th,
-  tfoot td {
+  thead th {
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.1),
@@ -68,13 +56,5 @@ export const StyledTable = styled.table`
 
   tbody tr:nth-of-type(even) {
     background-color: #b3dfff;
-  }
-
-  tbody tr {
-    background-image: url(noise.png);
-  }
-
-  table {
-    background-color: #d3edff;
   }
 `;

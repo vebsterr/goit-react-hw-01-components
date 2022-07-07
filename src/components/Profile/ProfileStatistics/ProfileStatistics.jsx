@@ -2,29 +2,29 @@ import PropTypes from 'prop-types';
 import {
   StyledMetaList,
   StyledMetaTitle,
-  StyledMetaInfo,
-} from './MetaInfo.styled';
+  StyledProfileStatistics,
+} from './ProfileStatistics.styled';
 
-export const MetaInfo = ({ followers, views, likes }) => {
+export const ProfileStatistics = ({ followers, views, likes }) => {
   return (
     <StyledMetaList>
       <li>
         <StyledMetaTitle>Followers</StyledMetaTitle>
-        <StyledMetaInfo>{followers}</StyledMetaInfo>
+        <StyledProfileStatistics>{followers}</StyledProfileStatistics>
       </li>
       <li>
         <StyledMetaTitle>Views</StyledMetaTitle>
-        <StyledMetaInfo>{views}</StyledMetaInfo>
+        <StyledProfileStatistics>{views}</StyledProfileStatistics>
       </li>
       <li>
         <StyledMetaTitle>Likes</StyledMetaTitle>
-        <StyledMetaInfo>{likes}</StyledMetaInfo>
+        <StyledProfileStatistics>{likes}</StyledProfileStatistics>
       </li>
     </StyledMetaList>
   );
 };
 
-MetaInfo.propTypes = {
+ProfileStatistics.propTypes = {
   followers: PropTypes.number.isRequired,
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
