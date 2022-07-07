@@ -33,13 +33,23 @@ export const StyledItem = styled.li`
 `;
 
 export const StyledLabel = styled.span`
+  color: #fff;
+  background-color: #000000;
+  border-radius: 20%;
+  padding: 5px 8px;
+  margin-bottom: 7px;
+  margin-top: 7px;
   font-size: 13px;
   font-weight: 300;
 `;
 
 export const StyledPercentage = styled.span`
-  padding-top: 10px;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 5px 8px;
+
+  margin-bottom: 7px;
   font-size: 15px;
   font-weight: 500;
-  padding-bottom: 10px;
 `;

@@ -19,7 +19,7 @@ export const Statistics = ({ stats, title }) => {
           return (
             <StyledItem key={el.id} color={randomColor()}>
               <StyledLabel>{el.label} </StyledLabel>
-              <StyledPercentage>{el.percentage}</StyledPercentage>
+              <StyledPercentage>{el.percentage}%</StyledPercentage>
             </StyledItem>
           );
         })}
